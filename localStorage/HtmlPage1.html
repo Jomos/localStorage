@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+    function catchName() {
+    var text = document.getElementById('myName');
+    console.log("Här");
+    sessionStorage.text = text.value;
+    };
+    </script>
+</head>
+<body>
+    <label for="myName">Name:</label>
+    <input id="myName" type="text" />
+    <a href="HtmlPage2.html">
+        <input type="submit" value="Save" onclick="catchName()" />
+        </a>
+</body>
+
+</html>
